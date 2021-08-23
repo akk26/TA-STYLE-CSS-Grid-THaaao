@@ -1,0 +1,530 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike,sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom styles of page */
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+.in{
+  display: none;
+}
+.bars{
+  display: none;
+}
+:root{
+  --primary: rgb(245,227,215);
+  --secondary: rgb(255,255,255);
+  --tirtiary: rgb(236,175,78);
+  --tetra: rgb(249,104,62);
+
+
+}
+/* general class */
+main{
+  width: 100%;
+}
+.container{
+  max-width: 1800px;
+  width: 100%;
+  margin: auto;
+}
+.flex{
+  display: flex;
+}
+
+.space-bw{
+  justify-content: space-between;
+}
+.justify-center{
+  justify-content: center;
+}
+.align-center{
+  align-items: center;
+}
+
+.flex-20{
+  flex: 0 1 20%;
+}
+.flex-23{
+  flex: 0 1 23%;
+}
+.flex-30{
+  flex: 0 1 30%;
+}
+
+.flex-33{
+  flex: 0 1 33%;
+}
+.flex-50{
+  flex: 0 1 50%;
+}
+.width{
+  width: 100%;
+}
+a{
+  text-decoration: none;
+}
+.font-weight{
+  font-weight: 700;
+}
+.btn{
+  padding: 0.75rem 2rem;
+  border-radius: 1.5rem;
+  display: inline-block;
+}
+
+.padding{
+  padding: 2rem 3rem;
+}
+/* header */
+.header{
+  padding: 1rem 5rem;
+  position: absolute;
+}
+.brand{
+  font-size: 2rem;
+}
+.nav-li{
+  margin-right: 1.5rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.nav-li:hover a{
+  color: rgb(246, 102, 66);
+}
+.brand a, .nav-li a{
+  color: black;
+}
+
+/* grid section */
+
+/* first row */
+.grid-section{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.hero img{
+  width: 100%; 
+  height: 100%;
+}
+.hero-text{
+  background-color: var(--primary);
+  padding: 10rem 2rem;
+}
+
+.welcome{
+  color: rgb(126, 126, 126);
+  margin-bottom: 2rem
+}
+.hero-detail h5{
+  font-size: 2rem;
+}
+.para{
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin: 2rem 0rem;
+  color: rgb(126, 126, 126);
+}
+
+.btn-primary{
+  border: 3px solid black ;
+  color: black;
+}
+
+/* second row */
+
+.second-row h3{
+ font-size: 2.5rem;
+}
+.diff{
+  color: lightsalmon;
+  margin: 1.5rem 0rem;
+}
+.second-row p{
+  line-height: 1.5rem;
+  padding-bottom: 1rem;
+  color: lightslategray;
+}
+.sr-second-column-img img{
+  width: 100%;
+  height: 100%;
+}
+.sr-second-column{
+  background-color: var(--tirtiary);
+  height: 100%;
+} 
+.sr-second-column-text h3{
+ font-size: 2rem;
+ color: white;
+}
+.sr-second-column-text p{
+  margin: 1.5rem 0rem;
+  color: white;
+}
+.percentage{
+  color: white;
+}
+.progress{
+  width: 100%;
+  margin-bottom: 1.25rem;
+  /* height: 0.7rem; */
+}
+.progress-label{
+  font-weight: 700  ;
+}
+progress {
+  border: none; 
+  width: 400px;
+  height: 0.3rem;
+  background: crimson;
+}
+
+progress {
+  color: lightblue;
+}
+
+progress::-webkit-progress-value {
+  background: lightblue;
+}
+
+progress::-moz-progress-bar {
+  background: lightcolor;
+}
+
+progress::-webkit-progress-value {
+  background: rgb(0, 0, 0);
+}
+
+progress::-webkit-progress-bar {
+  background: rgb(255, 255, 255);
+}
+
+
+/* third row */
+
+.tr-first-column{
+  background-color: var(--tirtiary);
+  text-align: center;
+  color: white;
+}
+.tr-first-column2{
+  background-color: var(--tetra);
+  text-align: center;
+  color: white;
+}
+.tr-first-column h5, .tr-first-column2 h5{
+  font-size: 2rem;
+  margin: 2rem 0rem;
+}
+.tr-first-column p, .tr-first-column2 p{
+  line-height: 1.5rem;
+  font-size: 1.25rem;
+}
+.icon{
+  font-size: 2.5rem;
+}
+.tr-second-column{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+}
+.tr-second-column2{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.tr-second-column h5, .tr-second-column2 h5{
+  font-size: 2rem;
+  margin: 2rem 0rem;
+}
+.tr-second-column p, .tr-second-column2 p{
+  line-height: 1.5rem;
+  font-size: 1.25rem;
+}
+
+
+/* fourth row */
+
+.fr-first-column img{
+  /* width: 60vh; */
+  width: 100%;
+  height: 100%;
+}
+.bg-orange{
+  background-color: var(--tetra);
+}
+.fr-second-column {
+  color: white;
+}
+.fr-second-column h3{
+  font-size: 2.5rem;
+  margin: 1.5rem 0rem;
+}
+.fr-second-column p{
+  margin-bottom: 3rem;
+  font-size: 1.25rem;
+}
+.fr-second-column .icon{
+  margin-right: 2rem;
+}
+
+.fr-second-column h5{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.fr-second-column span{
+  font-size: 1rem;
+  color: black;
+  font-weight: 700;
+}
+
+/* fifth row */
+
+.bg-yellow{
+  background-color: var(--tirtiary);
+}
+/* six */
+
+.six-row-col1 {
+  color: white;
+}
+
+.six-row-col1 h4{
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.six-row-col1 p{
+  margin-bottom: 2rem;
+}
+
+
+input, textarea{
+  border: none;
+  display: block;
+  border-bottom: 1px solid yellow;
+  width: 100%;
+  margin-bottom: 2rem;
+  color: white;
+}
+.btn-secondary{
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  width: 35%;
+  text-align: center;
+}
+input[type="text"]::placeholder {  
+  color: white;
+} 
+input[type="email"]::placeholder {  
+  color: white;
+} 
+input:placeholder-shown{
+  padding: 1rem 1rem;
+}
+.contact-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.contact{
+  color: white;
+  background-color: black;
+}
+.contact h5{
+  font-size: 2rem;
+}
+.contact p, .contact .fas{
+  margin: 1rem 0rem;
+}
+.contact .fas{
+  margin-right: 1rem;
+}
+.yellow{
+  color: rgb(180, 125, 43);
+}
+
+/* map */
+
+.map{
+  grid-column: 1/3;
+  text-align: center;
+  background-color: var(--tetra);
+}
+.map-sec{
+  width: 70%;
+  height: 50vh;
+}
+/* footer */
+footer{
+  text-align: center;
+  padding: 8rem 0rem;
+}
+.footer-para{
+  margin-bottom: 2.5rem;
+  color: gray;
+}
+.footer-para span{
+  color: rgb(246,218,175);
+}
+.footer-link a{
+  color: grey;
+  margin-right: 2rem;
+}
+
+/* media queries */
+@media screen and (max-width:768px){
+  html{
+    font-size: 12px;
+  }
+
+  .container{
+    width: 100%;
+  }
+  .flex-50{
+    flex: 0 1 100%;
+  }
+  .column{
+    flex-direction: column;
+  }
+  .hero{
+    grid-column: 1/-1;
+    height: 100vh;
+  }
+  .hero-text{
+    grid-column: 1/-1;
+  }
+  .three{
+    grid-column: 1/-1;
+  }
+  .four{
+    grid-column: 1/-1;
+  }
+  .five{
+    grid-column: 1/-1;
+  }
+  .six{
+    grid-column: 1/-1 ;
+  }
+  .seven{
+    grid-column: 1/-1;
+  }
+  .eight{
+    grid-column: 1/-1;
+  }
+  .nine{
+    grid-column: 1/-1;
+  }
+  .fr-first-column{
+    grid-column: 1/-1;
+  }
+  .six-row-col1{
+    grid-column: 1/-1;
+  }
+  .six-row-col2{
+    grid-column: 1/-1;
+  }
+  .flex-2{
+    display: flex;
+  }
+  .column{
+    flex-direction: column;
+  }
+  .flex-100{
+    flex: 0 1 100%;
+  }
+  .bars{
+    display: inline-block;
+  }
+  .nav-li{
+    margin: 1rem 0rem;
+  }
+  .nav-bar{
+    display: none;
+  }
+  #toggle:checked ~ .nav-bar{
+    display: inline-block;
+  }
+  .bars{
+    font-size: 1.25rem;
+    color: var(--tirtiary);
+    position: fixed;
+    right: 2rem;
+    top: 1rem;
+    z-index: 99;
+  }
+  .nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255,255,255,0.6);
+    padding-top: 2rem;
+    z-index: 9;
+  }
+  .in{
+    display: none;
+  }
+  .brand{
+    position: fixed;
+    z-index: 999;
+  }
+  .nav-li{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .nav-li:hover a{
+  color: rgb(246, 102, 66);
+}
+
+}

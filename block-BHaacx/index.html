@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/bfdf924193.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/stylesheet/stylesheet.css">
+  <title>Stimulus</title>
+</head>
+<body>
+  <header>
+    <!-- header -->
+    <section class="flex space-bw header container">
+      <div class="brand font-weight">
+       <a href="#">Stimulus</a>
+      </div>
+      <label class="bars" for="toggle">
+            <i class="fas fa-bars"></i>
+          </label>
+          <input class="in" id="toggle" type="checkbox">
+      <nav class="nav-bar">
+       <ul class="nav-ul flex column">
+         <li class="nav-li"  ><a href="#home">Home</a></li>
+         <li class="nav-li"><a href="#about">About me</a></li>
+         <li class="nav-li"><a href="#experience">Experiences</a></li>
+         <li class="nav-li"><a href="#testimonial">Testimonial</a></li>
+         <li class="nav-li"><a href="#contact">Contact</a></li>
+       </ul>
+      </nav>
+    </section>
+  </header>
+
+  <!-- main section -->
+  <main class=" container" >
+    <div class=" grid-section">
+      <!-- hero-section -->
+       <section class="hero">
+         <img src="./assets/media/home-img.jpg" alt="">
+       </section>
+       <section class="hero-text">
+         <article class="hero-detail">
+            <p class="welcome">WELCOME TO MY WEBSITE</p>
+            <h5>Hello, I am <strong>Stimulus</strong> currently based in New York city.</h5>
+            <p class="para">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi voluptate libero quo repellat! Laboriosam necessitatibus. consectetur adipisicing elit. Animi voluptate libero quo repellat! Laboriosam necessitatibus
+            </p>
+            <a class="btn btn-primary" href="#">GET STARTED</a>
+         </article>
+       </section> 
+
+       <!-- second row -->
+
+      <section class="padding three">
+        <article class="second-row flex-100">
+          <h3>Donec auctor</h3>
+          <h6 class="diff one">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </h6>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non nam sed minima consequuntur optio. Esse, enim at dignissimos eius.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non nam sed minima consequuntur optio. Esse, enim at dignissimos eius.</p>
+        </article>
+      </section>
+      <section id="about" class="four">
+        <article class="sr-second-column flex column">
+          <div class="sr-second-column-img flex-50">
+            <img src="./assets/media/about-img.jpg" alt="about">
+          </div>
+          <div class="sr-second-column-text flex-50 padding">
+            <h3>My Skills</h3>
+            <p>Photoshop, HTML, CSS, JS, Web Design</p>
+
+            <div class="flex space-bw">
+              <label class="progress-label" for="file">Frontend Design</label>
+              <span class="percentage">90%</span>
+            </div>
+           <progress class="progress"  id="file" max="100" value="90"> 90% </progress>
+
+           <div class="flex space-bw">
+              <label class="progress-label" for="file">Backend Processing</label>
+              <span class="percentage">70%</span>
+            </div>
+           <progress class="progress"  id="file" max="100" value="70"> 70% </progress>
+
+           <div class="flex space-bw">
+              <label class="progress-label" for="file">HTML5 & CSS3</label>
+              <span class="percentage">80%</span>
+            </div>
+           <progress class="progress" id="file" max="100" value="80"> 80% </progress>
+          </div>
+        </article>
+      </section>
+
+      <!-- third row  -->
+      <section class="five">
+        <article class="flex column">
+          <div class="flex-50 tr-first-column padding">
+           <i class="icon fas fa-desktop"></i>
+           <h5>Interface Design</h5>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, culpa quos! Nostrum consequatur dicta sapiente.</p>
+          </div>
+          <div class="flex-50 tr-first-column2 padding">
+           <i class="icon fab fa-telegram-plane"></i>
+            <h5>Media Strategy</h5>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, culpa quos! Nostrum consequatur dicta sapiente.</p>
+          </div>
+        </article>
+      </section>
+      <section class="six">
+       <article class="flex column">
+          <div class="flex-50 tr-second-column padding">
+           <i class="icon fas fa-th"></i>
+           <h5>Mobile App</h5>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, culpa quos! Nostrum consequatur dicta sapiente.</p>
+          </div>
+          <div class="flex-50 tr-second-column2 padding">
+          <i class="icon fab fa-html5"></i>
+            <h5>Coding</h5>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, culpa quos! Nostrum consequatur dicta sapiente.</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- fourth row -->
+      <section id="experience" class="fr-first-column seven">
+       <img src="./assets/media/experience-img.jpg" alt="experience">
+      </section>
+      <section class="bg-orange eight">
+       <article class="fr-second-column padding">
+         <h3>My Experiences</h3>
+         <p>Previous companies and my tasks</p>
+         <div class="flex">
+           <i class="icon fas fa-desktop"></i>
+           <div>
+             <h5>Graphic Designer <span>2014 Jul-2015 Sep</span></h5>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+           </div>
+         </div>
+
+         <div class="flex">
+           <i class="icon fas fa-desktop"></i>
+           <div>
+             <h5>Web Designer <span>2015 Oct-2017 Jan</span></h5>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+           </div>
+         </div>
+       </article>
+      </section>
+
+      <!-- fifth row -->
+      <section id="testimonial" class="bg-yellow nine">
+       <article class="fr-second-column padding">
+         <h3>My Education</h3>
+         <p>My education details</p>
+         <div class="flex">
+           <i class="icon fas fa-desktop"></i>
+           <div>
+             <h5>Master in Design<span>2012 Jan-2014 May</span></h5>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+           </div>
+         </div>
+
+         <div class="flex">
+           <i class="icon fas fa-desktop"></i>
+           <div>
+             <h5>Bachelor of Arts <span>2008 May-2011 Dec</span></h5>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+           </div>
+         </div>
+       </article>
+      </section>
+      <section class="fr-first-column">
+       <img src="./assets/media/education-img.jpg" alt="experience">
+      </section>
+
+      <!-- six row -->
+      <section id="contact" class="bg-orange padding six-row-col1">
+       <h4>Say hello..</h4>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+       <form class="bg-orange">
+          <input class="bg-orange" type="text" placeholder="Your Name"> 
+          <input class="bg-orange" type="email" placeholder="Your Email">
+          <textarea class="bg-orange" name="text" id="text" cols="30" rows="4">Write your message</textarea>
+      </form>
+      <a class="btn btn-secondary" href="#">Send</a>
+      </section>
+
+      <section class="six-row-col2 flex column">
+        <div class="contact-img flex-50">
+           <img src="./assets/media/contact-img.jpg" alt="contact">
+        </div>
+        <div class="contact flex-50 padding">
+          <h5>Visit my office</h5>
+          <p>456 New Street 22000, New York City, USA</p>
+          <h5>Contact</h5>
+          <div class="flex phone">
+            <i class="fas fa-phone-alt"></i>
+            <p>01-234-56-789</p>
+          </div>
+
+          <div class="flex envelope">
+            <i class="fas fa-envelope"></i>
+            <p class="yellow">hello@company.co</p>
+          </div>
+          <div class="flex globe">
+            <i class="fas fa-globe"></i>
+            <p class="yellow">company.co</p>
+          </div>
+        </div>
+      </section>
+      <section class="map">
+       <iframe class="map-sec padding" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.887979717099!2d76.35319631455894!3d32.207249020125985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1629732895413!5m2!1sen!2sin"style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </section>
+    </div>
+  </main>
+  <footer class="footer container">
+    <p class="footer-para">copyright  <small>&copy</small>2016 Your Company | Design: <span>templatemo</span> </p>
+    <div class="footer-link">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+      <a href="#"><i class="fas fa-basketball-ball"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
